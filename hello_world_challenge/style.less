@@ -1,0 +1,81 @@
+#titular {
+  background-color: @bg-color-4;
+  width: 100%;
+  .block;
+  padding: 60px 40px 60px 40px;
+  .border-radius(5px);
+}
+
+.subsecbod {
+  background-color: @bg-color-1;
+}
+
+.subsec {
+  background-color: @bg-color-1;
+  float: left;
+  padding: 3px;
+
+}
+
+.page_fill {
+  /*Set max-width*/
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.navbar {
+  background-color: @bg-color-3;
+  margin: 0 auto 0 auto;
+  padding: 5px 0px 5px 15px;
+  /*need to make it central*/
+  li {
+    top: 0px;
+    color: @nav-font-color;
+    background-color: @bg-color-3;
+    display: inline-block;
+    width: auto;
+    margin: 2px 8px 1px 5px;
+    font-size: 15px;
+    /*got to make it a set max length*/
+    /*needs to be all in one line, white font, black background*/
+  }
+}
+
+/*---------------------Dropdown*/
+.dropdown {
+  /*Text Styles*/
+  color: @nav-font-color;
+  font-size: 15px;
+  text-decoration: none;
+  /*Hover For Subsec*/
+
+}
+
+.dropdown:hover + .sub-menu {
+  .block;
+}
+
+/*----- Menu Outline -----*/
+.sub-menu {
+  width: 1000px;
+  margin: 0px auto;
+  display: none;
+  position: absolute;
+  li {
+    margin: 0px;
+    font-family: 'Ek Mukta';
+  }
+  a {
+    transition: all linear 0.15s;
+    color: #919191;
+  }
+  &:hover {
+    .block;
+  }
+}
+
+#top {
+  background-color: @bg-color-3;
+  width: 100%;
+}
